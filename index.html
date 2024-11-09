@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="calculadora">
+    <input type="text" id="pantalla" disabled>
+    <div class="fila">
+      <button onclick="limpiar()">C</button>
+      <button onclick="borrar()">←</button>
+      <button onclick="agregarSimbolo('/')">/</button>
+      <button onclick="agregarSimbolo('*')">*</button>
+    </div>
+    <div class="fila">
+      <button onclick="agregarSimbolo('7')">7</button>
+      <button onclick="agregarSimbolo('8')">8</button>
+      <button onclick="agregarSimbolo('9')">9</button>
+      <button onclick="agregarSimbolo('-')">-</button>
+    </div>
+    <div class="fila">
+      <button onclick="agregarSimbolo('4')">4</button>
+      <button onclick="agregarSimbolo('5')">5</button>
+      <button onclick="agregarSimbolo('6')">6</button>
+      <button onclick="agregarSimbolo('+')">+</button>
+    </div>
+    <div class="fila">
+      <button onclick="agregarSimbolo('1')">1</button>
+      <button onclick="agregarSimbolo('2')">2</button>
+      <button onclick="agregarSimbolo('3')">3</button>
+      <button onclick="calcular()">=</button>
+    </div>
+    <div class="fila">
+      <button onclick="agregarSimbolo('0')">0</button>
+      <button onclick="agregarSimbolo('.')">.</button>
+    </div>
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+</html>
